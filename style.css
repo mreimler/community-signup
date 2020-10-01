@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: url('imgs/memphis-background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 400px;
+}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 72px;
+  text-align: center;
+}
+
+.form {
+  font-family: 'Raleway', sans-serif;
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  visibility: hidden;
+}
+
+.form-control input {
+  border: 1px solid black;
+  border-radius: 50px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: var(--success-color);
+}
+
+.form-control.error input {
+  border-color: var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  visibility: visible;
+}
+
+.form button {
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  background-color: #93a99f;
+  border: 2px solid #93a99f;
+  border-radius: 50px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+}
+
+.modal-container {
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  top: 250px;
+  left: 750px;
+  right: 600px;
+  bottom: 250px;
+}
+
+.modal {
+  background-color: #fff;
+
+  border-radius: 5px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
