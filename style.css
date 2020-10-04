@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root {
-  --success-color: #2ecc71;
-  --error-color: #e74c3c;
+  --success-color: #8aaba0;
+  --error-color: #e5a096;
 }
 
 ::before,
@@ -25,15 +25,20 @@ body {
 }
 
 .container {
+  position: absolute;
+  right: 160px;
   background-color: #fff;
   border-radius: 5px;
   width: 400px;
+  height: 100%;
 }
 
 h1 {
   font-family: 'Rock Salt', cursive;
   font-size: 72px;
   text-align: center;
+  transform: rotate(-4.95deg);
+  margin-top: 70%;
 }
 
 .form {
@@ -55,7 +60,7 @@ h1 {
   border: 1px solid black;
   border-radius: 50px;
   display: block;
-  width: 100%;
+  width: 300px;
   padding: 10px;
   font-size: 16px;
 }
@@ -88,15 +93,15 @@ h1 {
 .form button {
   font-family: 'Raleway', sans-serif;
   cursor: pointer;
-  background-color: #93a99f;
-  border: 2px solid #93a99f;
+  background-color: #8aaba0;
+  border: 2px solid #8aaba0;
   border-radius: 50px;
   color: #fff;
   display: block;
+  width: 100%;
   font-size: 16px;
   padding: 10px;
   margin-top: 20px;
-  width: 100%;
 }
 
 button:focus {
@@ -109,24 +114,11 @@ button:focus {
 }
 
 .modal-container {
-  background-color: #fff;
-  display: none;
-  position: fixed;
-  top: 250px;
-  left: 750px;
-  right: 600px;
-  bottom: 250px;
-}
-
-.modal {
-  background-color: #fff;
-
-  border-radius: 5px;
   position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
+  right: 160px;
+  background-color: #fff;
+  border-radius: 5px;
   width: 400px;
+  height: 100%;
+  display: none;
 }

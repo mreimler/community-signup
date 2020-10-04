@@ -7,19 +7,24 @@
     <title>Welcome</title>
   </head>
   <body>
-    <h1>Hello</h1>
     <!-- Sign Up Flow-->
     <div class="container">
+      <h1>Hello</h1>
       <div>
         <form id="signup-form" class="form">
           <div class="form-control">
             <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Email" />
+            <input type="text" id="email" placeholder="Email" name="Email" />
             <small>Error message</small>
           </div>
           <div class="form-control">
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Password" />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              name="Password"
+            />
             <small>Error message</small>
           </div>
           <div class="form-control">
@@ -28,38 +33,56 @@
               type="password"
               id="password2"
               placeholder="Confirm password"
+              name="Repeat Password"
             />
             <small>Error message</small>
           </div>
           <button type="submit">Sign Up</button>
-          <button id="open" onclick="showModal()">Already a member? Sign In</button>
+          <button id="open" onclick="showModal()">
+            Already a member? Sign In
+          </button>
         </form>
       </div>
     </div>
     <!-- Sign In Flow -->
     <div class="modal-container" id="modal">
-      <form class="form" >
-        <div class="modal-content">
+      <h1>Hello</h1>
+      <form class="form">
         <div class="form-control">
           <label for="username">Username</label>
-          <input type="text" id="username" placeholder="Username" />
+          <input
+            type="text"
+            id="username"
+            placeholder="Username"
+            name="Username"
+          />
           <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="email">Email</label>
-          <input type="text" id="signin-email" placeholder="Email" />
+          <input
+            type="text"
+            id="signin-email"
+            placeholder="Email"
+            name="Email"
+          />
           <small>Error message</small>
         </div>
         <div class="form-control">
           <label for="password">Password</label>
-          <input type="password" id="signin-password" placeholder="Password" />
+          <input
+            type="password"
+            id="signin-password"
+            placeholder="Password"
+            name="Password"
+          />
           <small>Error message</small>
         </div>
         <button type="submit">Sign In</button>
         <button type="button">Forgot password?</button>
       </form>
     </div>
-    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
